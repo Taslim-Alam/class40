@@ -1,0 +1,92 @@
+/* .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px dashed #000;
+}
+
+.tooltiptext {
+    width: 100px;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    background-color: mediumaquamarine;
+    padding: 5px;
+    color: #fff;
+    border-radius: 6px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.tooltip .tooltiptext::after {
+ top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: blueviolet, transparent, transparent, transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+} */
+
+
+/* Code from Sorowar starts here */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    padding: 7px;
+    width: 152px;
+    border-bottom: 5px dotted rgb(57, 9, 231);
+
+}
+
+.tooltiptext {
+    position: absolute;
+    background-color: rgb(57, 9, 231);
+    padding: 7px;
+    color: white;
+    visibility: hidden;
+    border-radius: 6px;
+    width: 120px;
+    text-align: center;
+    z-index: 1;
+    top: 125%;
+    left: 12%;
+    margin-left: -10px;
+    opacity: 0;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: rgb(236, 234, 244) transparent transparent transparent;
+}
+
+/* Code from Sorowar ends here */
+
+
+.class1 {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border: 2px solid red;
+}
+
+.class2 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    background-color: antiquewhite;
+}
